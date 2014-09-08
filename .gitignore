@@ -1,2 +1,6 @@
 *.pyc
-.DS_Store
+*.DS_Store
+djangocms_collection.egg-info
+build
+dist
+.egg-info
