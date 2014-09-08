@@ -1,0 +1,22 @@
+{% load i18n cms_tags %}
+<div class="app app-blog">
+    <div class="blog-list">
+        <ul class="blog-items">
+            {% for subpage in list_plugins %}
+            <li align="center">
+                <p><a href="{{ subpage.instance.get_absolute_url }}">{% render_plugin subpage.picture %}</a></p>
+                <h3><a href="{{ subpage.instance.get_absolute_url }}">{% render_model subpage.instance "title" %}</a></h3>
+                
+                <div class="blog-lead">
+                    {% render_plugin subpage.description %}
+                </div>
+                <!--<p class="blog-more"><a href="{{ subpage.instance.get_absolute_url }}">read more</a></p>-->
+                <p class="blog-meta"><small>
+                    <span class="blog-date">{{ subpage.instance.publication_date }}</span>
+                    <span class="blog-author">{% trans "by" %} {{ subpage.instance.created_by }}</span></small>
+                </p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
