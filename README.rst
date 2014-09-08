@@ -7,9 +7,9 @@ Collection plugin for django CMS 3.
 Installation
 -----------
 
-This plugin requires 'django CMS' 3.0 or higher to be properly isntalled.
+This plugin requires 'django CMS' 3.0 or higher to be properly installed.
 
-To get started using ''djangocms_collection'':
+To get started using "djangocms_collection":
 
 1. Install "djangocms_collection" in your projects 'virtualenv'
 
